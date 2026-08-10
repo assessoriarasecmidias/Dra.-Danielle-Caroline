@@ -152,17 +152,12 @@
             fill: currentColor;
         }
 
-        /* Sticky Navigation Header */
+        /* Navigation Header — estático no desktop */
         .header {
-            position: fixed;
-            top: 0;
-            left: 0;
+            position: static;
             width: 100%;
-            z-index: 1000;
-            background-color: rgba(250, 248, 245, 0.92);
-            backdrop-filter: blur(12px);
+            background-color: var(--bg-primary);
             border-bottom: 1px solid rgba(232, 226, 216, 0.6);
-            transition: var(--transition);
         }
 
         .header-container {
@@ -214,7 +209,7 @@
 
         /* Hero Section */
         .hero {
-            padding-top: 140px;
+            padding-top: 80px;
             padding-bottom: 80px;
             position: relative;
             background: linear-gradient(180deg, var(--bg-primary) 0%, #F5EFEE 100%);
@@ -722,10 +717,6 @@
                 display: none;
             }
 
-            .hero {
-                padding-top: 110px;
-            }
-
             .hero-float-tag {
                 position: relative;
                 bottom: 0;
@@ -747,25 +738,35 @@
                 padding: 0 1.125rem;
             }
 
-            /* --- Header --- */
+            /* --- Header mobile: estático, brand centralizado, sem botão, sem nav --- */
+            .header {
+                position: static;
+                border-bottom: 1px solid rgba(232, 226, 216, 0.6);
+            }
+
             .header-container {
-                height: 64px;
+                height: 56px;
+                justify-content: center;
+            }
+
+            .brand-logo {
+                align-items: center;
+                text-align: center;
             }
 
             .brand-name {
-                font-size: 1.1rem;
-                letter-spacing: 0.05em;
+                font-size: 1rem;
+                letter-spacing: 0.07em;
             }
 
             .brand-tag {
-                font-size: 0.6rem;
-                letter-spacing: 0.14em;
+                font-size: 0.58rem;
+                letter-spacing: 0.16em;
             }
 
-            .header .btn {
-                padding: 0.75rem 1.1rem;
-                font-size: 0.8125rem;
-                white-space: nowrap;
+            .header .btn,
+            .header nav {
+                display: none;
             }
 
             /* --- Botões gerais em mobile --- */
@@ -782,7 +783,7 @@
 
             /* --- Hero --- */
             .hero {
-                padding-top: 80px;
+                padding-top: 48px;
                 padding-bottom: 56px;
             }
 
@@ -979,10 +980,6 @@
            MOBILE PEQUENO: até 390px
         ====================================================== */
         @media (max-width: 390px) {
-            .header .btn {
-                display: none; /* Esconde CTA header em telas muito pequenas — evita quebra */
-            }
-
             .hero-title {
                 font-size: 1.875rem;
             }
