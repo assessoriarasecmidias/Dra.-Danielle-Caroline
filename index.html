@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Danielle Caroline | Harmonização Facial Estratégica em Belo Horizonte</title>
+    <meta name="description" content="Harmonização Facial com planejamento estratégico e foco em naturalidade. Respeito à sua anatomia e preservação da sua identidade em Belo Horizonte. CRBM 16486.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Palette Derived from Positioning & Brand Assets */
+            --bg-primary: #FAF8F5; /* Warm cream editorial background */
+            --bg-secondary: #FFFFFF; /* Pure white contrast */
+            --bg-accent: #F2EDE4; /* Soft warm nude card fill */
+            --bg-dark: #121212; /* Deep luxury charcoal */
+            
+            --text-main: #1A1A1A; /* Near black body text */
+            --text-muted: #666059; /* Soft taupe body text */
+            --text-light: #FAF8F5;
+            
+            --brand-gold: #C5A059; /* Warm refined gold */
+            --brand-gold-hover: #B08C45;
+            --brand-dark-gold: #8E6E32;
+            
+            --border-light: #E8E2D8;
+            --border-gold: rgba(197, 160, 89, 0.3);
+            
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            
+            --shadow-subtle: 0 10px 30px rgba(26, 26, 26, 0.04);
+            --shadow-hover: 0 20px 40px rgba(26, 26, 26, 0.08);
+            
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Base Resets */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Typography Utility */
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-main);
+        }
+
+        .eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 600;
+            color: var(--brand-gold);
+            display: inline-block;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.0625rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1.125rem 2.25rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            letter-spacing: 0.02em;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--brand-gold);
+            color: #FFFFFF;
+            box-shadow: 0 8px 25px rgba(197, 160, 89, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--brand-gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(197, 160, 89, 0.35);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-gold);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-accent);
+            border-color: var(--brand-gold);
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Sticky Navigation Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(232, 226, 216, 0.6);
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .brand-logo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--text-main);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .brand-tag {
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            color: var(--brand-gold);
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--brand-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 140px;
+            padding-bottom: 80px;
+            position: relative;
+            background: linear-gradient(180deg, var(--bg-primary) 0%, #F5EFEE 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 3.75rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-title span {
+            font-style: italic;
+            color: var(--brand-gold);
+            font-weight: 400;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            max-width: 540px;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .badge-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            border: 1px solid var(--border-light);
+            font-size: 0.8125rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .badge-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--brand-gold);
+            border-radius: 50%;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+        }
+
+        .hero-image-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            position: relative;
+            background-color: var(--bg-accent);
+            aspect-ratio: 4/5;
+        }
+
+        .hero-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-float-tag {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background-color: var(--bg-secondary);
+            padding: 1.25rem 1.75rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-hover);
+            border: 1px solid var(--border-light);
+            max-width: 240px;
+        }
+
+        .hero-float-tag .number {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--brand-gold);
+            line-height: 1;
+        }
+
+        .hero-float-tag .label {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Section 2: Pain Points (Objeções) */
+        .pain-section {
+            padding: 100px 0;
+            background-color: var(--bg-secondary);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            margin-bottom: 1rem;
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .pain-card {
+            background-color: var(--bg-primary);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            transition: var(--transition);
+        }
+
+        .pain-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-subtle);
+            border-color: var(--border-gold);
+        }
+
+        .pain-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--bg-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--brand-gold);
+        }
+
+        .pain-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .pain-card p {
+            font-size: 0.95rem;
+        }
+
+        /* Section 3: Methodology / Pillars */
+        .methodology {
+            padding: 100px 0;
+            background-color: var(--bg-primary);
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .pillar-item {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            border-top: 3px solid var(--brand-gold);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .pillar-num {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--brand-gold);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .pillar-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Section 4: Services */
+        .services {
+            padding: 100px 0;
+            background-color: var(--bg-secondary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-primary);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            border: 1px solid var(--border-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            border-color: var(--brand-gold);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            background-color: var(--bg-accent);
+            color: var(--brand-dark-gold);
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            align-self: flex-start;
+            font-weight: 600;
+        }
+
+        .service-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .service-features li {
+            font-size: 0.875rem;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: var(--brand-gold);
+            font-weight: bold;
+        }
+
+        /* Section 5: Gallery / Before & After Social Proof */
+        .proof-section {
+            padding: 100px 0;
+            background-color: var(--bg-primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        .gallery-item {
+            background-color: var(--bg-secondary);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .gallery-img-container {
+            position: relative;
+            aspect-ratio: 4/5;
+            background-color: var(--bg-accent);
+            overflow: hidden;
+        }
+
+        .gallery-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            padding: 1.5rem;
+        }
+
+        .gallery-caption h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .gallery-caption p {
+            font-size: 0.875rem;
+        }
+
+        /* Testimonials Strip */
+        .testimonials-strip {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: var(--bg-secondary);
+            padding: 1.75rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-light);
+            font-style: italic;
+        }
+
+        .testimonial-text {
+            font-size: 0.9375rem;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.8125rem;
+            color: var(--brand-gold);
+        }
+
+        /* Section 6: Professional Profile (Sobre) */
+        .about-section {
+            padding: 100px 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .about-content .eyebrow {
+            color: var(--brand-gold);
+        }
+
+        .about-content h2 {
+            color: var(--text-light);
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: #B3ADA5;
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+        }
+
+        .about-credentials {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .cred-item h5 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--brand-gold);
+            margin-bottom: 0.25rem;
+        }
+
+        .cred-item p {
+            font-size: 0.8125rem;
+            color: #8C867E;
+            margin-bottom: 0;
+        }
+
+        /* Section 7: Location & Consultation Details */
+        .location-section {
+            padding: 100px 0;
+            background-color: var(--bg-secondary);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .location-info h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .info-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .info-icon {
+            color: var(--brand-gold);
+            font-weight: bold;
+        }
+
+        /* Section 8: Final CTA Banner */
+        .final-cta {
+            padding: 90px 0;
+            background: linear-gradient(135deg, #1A1A1A 0%, #2A251E 100%);
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        .cta-box {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .cta-box h2 {
+            color: var(--text-light);
+            font-size: clamp(2.25rem, 4vw, 3.25rem);
+            margin-bottom: 1.25rem;
+        }
+
+        .cta-box p {
+            color: #C2BBB0;
+            font-size: 1.125rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0A0A0A;
+            color: #666;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.8125rem;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 992px) {
+            .hero-grid,
+            .about-grid,
+            .location-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .pain-grid,
+            .services-grid,
+            .gallery-grid,
+            .pillars-grid,
+            .testimonials-strip {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Mobile menu simplification */
+            }
+
+            .hero {
+                padding-top: 110px;
+            }
+
+            .hero-float-tag {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                margin-top: 1rem;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="brand-logo">
+                <span class="brand-name">Dra. Danielle Caroline</span>
+                <span class="brand-tag">Harmonização Facial Estratégica</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#metodologia" class="nav-link">Metodologia</a></li>
+                    <li><a href="#servicos" class="nav-link">Procedimentos</a></li>
+                    <li><a href="#resultados" class="nav-link">Resultados</a></li>
+                    <li><a href="#sobre" class="nav-link">A Médica</a></li>
+                </ul>
+            </nav>
+            <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20estrat%C3%A9gica%20de%20harmoniza%C3%A7%C3%A3o%20facial." class="btn btn-primary" target="_blank" rel="noopener">
+                Agendar Consulta
+            </a>
+        </div>
+    </header>
+
+    <!-- 01. Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="eyebrow">Atendimento Exclusivo em Belo Horizonte • CRBM 16486</span>
+                <h1 class="hero-title">Harmonização Facial Estratégica: <span>Sua beleza em equilíbrio natural</span></h1>
+                <p class="hero-description">
+                    Planejamento orofacial personalizado que respeita a sua anatomia e preserva quem você é. Sem excessos, sem padronização, apenas a sua melhor versão.
+                </p>
+                <div class="hero-badges">
+                    <div class="badge-item"><span class="badge-dot"></span> Planejamento Full Face</div>
+                    <div class="badge-item"><span class="badge-dot"></span> Preservação Anatômica</div>
+                    <div class="badge-item"><span class="badge-dot"></span> Protocolos Exclusivos</div>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20estrat%C3%A9gica%20de%20harmoniza%C3%A7%C3%A3o%20facial." class="btn btn-primary" target="_blank" rel="noopener">
+                        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.35 5L2 22l5.1-1.32C8.52 21.52 10.21 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                        Agendar Avaliação Individual
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-card">
+                    <img src="foto da Danielle Caroline.jpg" alt="Dra. Danielle Caroline - Especialista em Harmonização Facial em Belo Horizonte">
+                </div>
+                <div class="hero-float-tag">
+                    <div class="number">100%</div>
+                    <div class="label">Foco em Naturalidade e Planejamento Personalizado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02. Pain & Objections Section -->
+    <section class="pain-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Você se identifica com isso?</span>
+                <h2 class="section-title">Harmonização não é sobre transformar seu rosto em outro. É sobre alinhar o espelho à sua essência.</h2>
+                <p>Muitas pessoas deixam de cuidar da própria aparência por receio de procedimentos genéricos ou resultados artificiais.</p>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Medo do Efeito "Padronizado"</h3>
+                    <p>Receio de ficar com bochechas ou lábios excessivamente volumosos e perder os traços marcantes que definem quem você realmente é.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    </div>
+                    <h3>Perda Sutil de Volume e Contorno</h3>
+                    <p>Com o passar dos anos, o rosto perde sustentação natural, trazendo um aspecto de cansaço que não reflete a sua energia interna.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
+                    <h3>Falta de Planejamento Integrado</h3>
+                    <p>Aplicações isoladas sem análise global das proporções faciais costumam gerar resultados desequilibrados e insatisfatórios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03. Methodology Section -->
+    <section class="methodology" id="metodologia">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">A Filosofia Dra. Danielle Caroline</span>
+                <h2 class="section-title">Os 4 Pilares da Harmonização Estratégica</h2>
+                <p>Cada intervenção é guiada por rigor técnico, estudo anatômico minucioso e respeito absoluto à individualidade de cada paciente.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-item">
+                    <div class="pillar-num">01</div>
+                    <h4>Análise Proporcional</h4>
+                    <p>Mapeamento detalhado das estruturas faciais para identificar pontos exatos de luz e sustentação.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-num">02</div>
+                    <h4>Respeito à Anatomia</h4>
+                    <p>Preservação das dinâmicas musculares para garantir que suas expressões continuem autênticas e vívidas.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-num">03</div>
+                    <h4>Técnicas Avançadas</h4>
+                    <p>Uso de metodologias como a técnica do "sanduíche" e vetorização estratégica para máxima segurança e conforto.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-num">04</div>
+                    <h4>Acompanhamento Contínuo</h4>
+                    <p>Trabalho relacional de manutenção e cuidado contínuo ao longo dos anos, mantendo a evolução natural.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04. Services & Procedures -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Soluções Personalizadas</span>
+                <h2 class="section-title">Procedimentos Executados com Propósito</h2>
+                <p>Tecnologia e arte orofacial a serviço do seu bem-estar e autoestima.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <span class="service-tag">Carro-Chefe</span>
+                        <h3>Harmonização Facial Completa (Full Face)</h3>
+                        <p>Planejamento estratégico global. Restaura volumes perdidos, redesenha o contorno mandibular e devolve o equilíbrio harmônico sem perder a identidade.</p>
+                        <ul class="service-features">
+                            <li>Análise tridimensional do perfil</li>
+                            <li>Sustentação estratégica de estruturas</li>
+                            <li>Rejuvenescimento sutil e refinado</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Harmoniza%C3%A7%C3%A3o%20Full%20Face." class="btn btn-secondary" target="_blank" rel="noopener">Saber Mais no WhatsApp</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <span class="service-tag">Delicadeza & Luz</span>
+                        <h3>Preenchimento Labial Estratégico</h3>
+                        <p>Devolução de contorno, hidratação profunda e projeção natural dos lábios, respeitando as proporções dos terços faciais.</p>
+                        <ul class="service-features">
+                            <li>Técnica de barreira protetora</li>
+                            <li>Definição do arco do cupido</li>
+                            <li>Volume sutil e simétrico</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Preenchimento%20Labial." class="btn btn-secondary" target="_blank" rel="noopener">Saber Mais no WhatsApp</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <span class="service-tag">Específico para Homens</span>
+                        <h3>Harmonização Facial Masculina</h3>
+                        <p>Protocolo focado em valorizar a masculinidade existente. Define o terço inferior e o ângulo mandibular mantendo traços fortes e naturais.</p>
+                        <ul class="service-features">
+                            <li>Sem efeminamento dos traços</li>
+                            <li>Marcada definição de mandíbula e queixo</li>
+                            <li>Aspecto mais firme e descansado</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Harmoniza%C3%A7%C3%A3o%20Masculina." class="btn btn-secondary" target="_blank" rel="noopener">Saber Mais no WhatsApp</a>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <span class="service-tag">Prevenção & Suavidade</span>
+                        <h3>Botox & Tratamentos Tecnológicos</h3>
+                        <p>Suavização de linhas de expressão preventivas e corretivas, além de tecnologias como Laser Day para renovação da textura e viço da pele.</p>
+                        <ul class="service-features">
+                            <li>Preservação da expressão natural</li>
+                            <li>Estímulo de firmeza e qualidade de pele</li>
+                            <li>Protocolos de manutenção e viço</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Botox%20ou%20Laser." class="btn btn-secondary" target="_blank" rel="noopener">Saber Mais no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05. Social Proof / Real Results -->
+    <section class="proof-section" id="resultados">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Transformações Reais</span>
+                <h2 class="section-title">Resultados que Falam por Si</h2>
+                <p>Confira alguns casos planejados com foco em equilíbrio, simetria e extrema naturalidade.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Image Asset 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-img-container">
+                        <img src="Harmonização facial feminina.jpg" alt="Antes e Depois Harmonização Facial Feminina - Dra. Danielle Caroline">
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Harmonização Facial Feminina (Full Face)</h4>
+                        <p>Equilíbrio das proporções de perfil, melhoria na sustentação e viço mantendo a delicadeza dos traços originais.</p>
+                    </div>
+                </div>
+
+                <!-- Image Asset 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-img-container">
+                        <img src="02 Harmonização facial feminina.jpg" alt="Caso Clínico Harmonização Feminina de Perfil">
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Planejamento de Perfil e Contorno</h4>
+                        <p>Ajuste estratégico de queixo e linha mandibular, proporcionando um perfil harmônico e elegante.</p>
+                    </div>
+                </div>
+
+                <!-- Image Asset 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-img-container">
+                        <img src="03 Harmonização facial feminina.jpg" alt="Harmonização Facial com Foco em Naturalidade">
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Rejuvenescimento e Suporte</h4>
+                        <p>Devolução de volume em pontos-chave da face, eliminando o aspecto cansado de forma imperceptível e sutil.</p>
+                    </div>
+                </div>
+
+                <!-- Image Asset 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-img-container">
+                        <img src="Harmonização facial masculina.jpg" alt="Antes e Depois Harmonização Facial Masculina">
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Harmonização Facial Masculina</h4>
+                        <p>Valorização do ângulo mandibular e estrutura facial, trazendo maior definição e imponência sem perder a naturalidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Testimonials -->
+            <div class="testimonials-strip">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"BOTOX DAY OU GLORY DAY? Eu amo! A Dra. Danielle cuida do meu rosto com todo carinho e responsabilidade, sempre mantendo o que eu tenho de mais natural!"</p>
+                    <p class="testimonial-author">— Gabi Lima (@gabilimaby)</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Beleza & naturalidade caminham juntas. Obrigada Dra. Danielle por cuidar de mim com tanto profissionalismo e precisão nos detalhes!"</p>
+                    <p class="testimonial-author">— Gio Lima (@giolimabrbz)</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Confio de olhos fechados. Ela estuda o caso antes de qualquer aplicação. O resultado fica impecável sem parecer que 'fiz procedimento'."</p>
+                    <p class="testimonial-author">— Laura Tavares (@lauratavaresg)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06. About Professional (Sobre) -->
+    <section class="about-section" id="sobre">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="foto da Danielle Caroline.jpg" alt="Dra. Danielle Caroline - Especialista em Harmonização Facial">
+            </div>
+            <div class="about-content">
+                <span class="eyebrow">Conheça a Profissional</span>
+                <h2>Dra. Danielle Caroline</h2>
+                <p>Especialista em Harmonização Facial e Estética Orofacial em Belo Horizonte (CRBM 16486). Com uma visão artística e fundamentada nas ciências biológicas, dedica sua atuação ao planejamento facial personalizado.</p>
+                <p>Acredito que a verdadeira estética não impõe padrões nem busca transformações radicais. Meu propósito é alinhar a sua imagem externa com a força e vitalidade que você sente por dentro, através de intervenções mínimas e altamente precisas.</p>
+                
+                <div class="about-credentials">
+                    <div class="cred-item">
+                        <h5>CRBM 16486</h5>
+                        <p>Registro Profissional Ativo</p>
+                    </div>
+                    <div class="cred-item">
+                        <h5>Belo Horizonte</h5>
+                        <p>Atendimento Exclusivo na Capital</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 07. Location & Clinic Experience -->
+    <section class="location-section">
+        <div class="container location-grid">
+            <div class="location-info">
+                <span class="eyebrow">Atendimento Presencial</span>
+                <h2>Um Espaço Desenhado para Seu Conforto e Segurança</h2>
+                <p>Nosso consultório em Belo Horizonte combina arquitetura sofisticada, ambiente climatizado e rigorosos padrões de biossegurança para oferecer uma experiência acolhedora e privativa.</p>
+                
+                <ul class="info-list">
+                    <li class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div><strong>Localização Privilegiada:</strong> Belo Horizonte, MG (Atendimento com hora marcada).</div>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon">☕</span>
+                        <div><strong>Ambiente Exclusivo:</strong> Estrutura moderna planejada para proporcionar total privacidade durante a sua consulta.</div>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon">📱</span>
+                        <div><strong>Agendamento Simplificado:</strong> Atendimento direto via WhatsApp para alinhamento de horários.</div>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Gostaria%20de%20saber%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20atendimento." class="btn btn-primary" target="_blank" rel="noopener">Consultar Horários Disponíveis</a>
+            </div>
+            <div style="background-color: var(--bg-accent); border-radius: var(--radius-lg); padding: 3rem; border: 1px solid var(--border-light); text-align: center;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Como Funciona Sua Primeira Consulta?</h3>
+                <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">1. Análise detalhada das suas queixas e desejos.<br>2. Mapeamento das proporções e estruturas faciais.<br>3. Apresentação do plano individualizado.<br>4. Execução precisa com acompanhamento pós-procedimento.</p>
+                <div style="font-weight: 600; color: var(--brand-gold);">Atendimento 100% Personalizado</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 08. Final CTA Banner -->
+    <section class="final-cta">
+        <div class="container cta-box">
+            <span class="eyebrow" style="color: var(--brand-gold);">Dê o Próximo Passo</span>
+            <h2>Pronta para agendar sua avaliação estratégica em Belo Horizonte?</h2>
+            <p>Descubra como pequenas intervenções estratégicas podem valorizar os seus traços naturais de forma segura e elegante.</p>
+            <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Quero%20agendar%20minha%20consulta%20com%20a%20Dra.%20Danielle%20Caroline." class="btn btn-primary" style="padding: 1.25rem 2.5rem; font-size: 1rem;" target="_blank" rel="noopener">
+                Falar Diretamente no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div>
+                <p style="color: #888; font-size: 0.8125rem;">© 2026 Dra. Danielle Caroline — Estética Avançada & Harmonização Facial. CRBM 16486. Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <p style="color: #666; font-size: 0.8125rem;">Belo Horizonte • MG</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
