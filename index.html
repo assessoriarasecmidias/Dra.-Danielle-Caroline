@@ -690,7 +690,9 @@
             align-items: center;
         }
 
-        /* Mobile Responsiveness */
+        /* =====================================================
+           TABLET: 768px – 992px
+        ====================================================== */
         @media (max-width: 992px) {
             .hero-grid,
             .about-grid,
@@ -699,16 +701,25 @@
                 gap: 2.5rem;
             }
 
-            .pain-grid,
+            .pain-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .services-grid,
-            .gallery-grid,
-            .pillars-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pillars-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .testimonials-strip {
                 grid-template-columns: 1fr;
             }
 
             .nav-links {
-                display: none; /* Mobile menu simplification */
+                display: none;
             }
 
             .hero {
@@ -719,8 +730,266 @@
                 position: relative;
                 bottom: 0;
                 left: 0;
-                margin-top: 1rem;
+                margin-top: 1.5rem;
                 max-width: 100%;
+            }
+        }
+
+        /* =====================================================
+           MOBILE: até 600px — foco principal da otimização
+        ====================================================== */
+        @media (max-width: 600px) {
+
+            /* --- Base --- */
+            html { font-size: 15px; }
+
+            .container {
+                padding: 0 1.125rem;
+            }
+
+            /* --- Header --- */
+            .header-container {
+                height: 64px;
+            }
+
+            .brand-name {
+                font-size: 1.1rem;
+                letter-spacing: 0.05em;
+            }
+
+            .brand-tag {
+                font-size: 0.6rem;
+                letter-spacing: 0.14em;
+            }
+
+            .header .btn {
+                padding: 0.75rem 1.1rem;
+                font-size: 0.8125rem;
+                white-space: nowrap;
+            }
+
+            /* --- Botões gerais em mobile --- */
+            .btn {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                font-size: 0.9375rem;
+                justify-content: center;
+            }
+
+            .hero-actions .btn {
+                margin-top: 0.25rem;
+            }
+
+            /* --- Hero --- */
+            .hero {
+                padding-top: 80px;
+                padding-bottom: 56px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            /* Imagem vem DEPOIS do texto em mobile (order) */
+            .hero-content { order: 1; }
+            .hero-image-wrapper { order: 2; }
+
+            .hero-title {
+                font-size: clamp(2rem, 7.5vw, 2.75rem);
+                line-height: 1.12;
+                margin-bottom: 1rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-badges {
+                gap: 0.625rem;
+                margin-bottom: 2rem;
+            }
+
+            .badge-item {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.875rem;
+            }
+
+            .hero-image-card {
+                aspect-ratio: 3/2;
+                border-radius: var(--radius-md);
+            }
+
+            .hero-float-tag {
+                padding: 1rem 1.25rem;
+                max-width: 100%;
+                border-radius: var(--radius-sm);
+            }
+
+            .hero-float-tag .number {
+                font-size: 1.5rem;
+            }
+
+            /* --- Seções genéricas: reduz padding vertical --- */
+            .pain-section,
+            .methodology,
+            .services,
+            .proof-section,
+            .about-section,
+            .location-section {
+                padding: 64px 0;
+            }
+
+            .final-cta {
+                padding: 64px 0;
+            }
+
+            /* --- Section headers --- */
+            .section-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .section-title {
+                font-size: clamp(1.625rem, 6vw, 2.25rem);
+            }
+
+            /* --- Pain grid: 1 coluna --- */
+            .pain-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .pain-card {
+                padding: 1.75rem 1.5rem;
+            }
+
+            .pain-card h3 {
+                font-size: 1.2rem;
+            }
+
+            /* --- Pillars: 1 coluna --- */
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+
+            .pillar-item {
+                padding: 1.5rem;
+            }
+
+            /* --- Services --- */
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+                margin-top: 2.5rem;
+            }
+
+            .service-card {
+                padding: 1.75rem 1.5rem;
+                border-radius: var(--radius-md);
+            }
+
+            .service-card h3 {
+                font-size: 1.45rem;
+            }
+
+            /* --- Gallery --- */
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-top: 2.5rem;
+            }
+
+            .gallery-img-container {
+                aspect-ratio: 4/3;
+            }
+
+            /* --- Testimonials --- */
+            .testimonials-strip {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin-top: 2.5rem;
+            }
+
+            /* --- About section --- */
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            /* Texto vem primeiro em mobile */
+            .about-image { order: 2; }
+            .about-content { order: 1; }
+
+            .about-content h2 {
+                font-size: clamp(1.75rem, 6vw, 2.5rem);
+            }
+
+            .about-credentials {
+                flex-direction: column;
+                gap: 1.25rem;
+            }
+
+            /* --- Location --- */
+            .location-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .location-info h2 {
+                font-size: 1.75rem;
+            }
+
+            /* Box "Como Funciona" */
+            .consultation-box {
+                padding: 1.75rem 1.5rem !important;
+                border-radius: var(--radius-md) !important;
+            }
+
+            .consultation-box h3 {
+                font-size: 1.45rem !important;
+            }
+
+            /* --- Final CTA --- */
+            .cta-box h2 {
+                font-size: clamp(1.75rem, 6vw, 2.5rem);
+            }
+
+            .cta-box p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .cta-box .btn {
+                padding: 1.125rem 1.75rem !important;
+                font-size: 0.9375rem !important;
+            }
+
+            /* --- Footer --- */
+            .footer-flex {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+
+        /* =====================================================
+           MOBILE PEQUENO: até 390px
+        ====================================================== */
+        @media (max-width: 390px) {
+            .header .btn {
+                display: none; /* Esconde CTA header em telas muito pequenas — evita quebra */
+            }
+
+            .hero-title {
+                font-size: 1.875rem;
+            }
+
+            .badge-item {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.75rem;
             }
         }
     </style>
@@ -1040,7 +1309,7 @@
 
                 <a href="https://wa.me/5531984656787?text=Ol%C3%A1!%20Gostaria%20de%20saber%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20atendimento." class="btn btn-primary" target="_blank" rel="noopener">Consultar Horários Disponíveis</a>
             </div>
-            <div style="background-color: var(--bg-accent); border-radius: var(--radius-lg); padding: 3rem; border: 1px solid var(--border-light); text-align: center;">
+            <div class="consultation-box" style="background-color: var(--bg-accent); border-radius: var(--radius-lg); padding: 3rem; border: 1px solid var(--border-light); text-align: center;">
                 <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Como Funciona Sua Primeira Consulta?</h3>
                 <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">1. Análise detalhada das suas queixas e desejos.<br>2. Mapeamento das proporções e estruturas faciais.<br>3. Apresentação do plano individualizado.<br>4. Execução precisa com acompanhamento pós-procedimento.</p>
                 <div style="font-weight: 600; color: var(--brand-gold);">Atendimento 100% Personalizado</div>
